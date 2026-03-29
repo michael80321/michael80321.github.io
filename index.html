@@ -2,9 +2,9 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 搜尋引擎顯示資訊優化 (SEO Meta Tags) -->
+    <!-- 1. SEO 搜尋引擎顯示資訊 (強化版) -->
     <title>台中水晶店推薦｜騏藝逸品 Qi Yi Crystal：台灣專業水晶顧問與能量校正服務</title>
     <meta name="description" content="騏藝逸品 Qi Yi Crystal 專業台中水晶店。我們不只是販售水晶，更是您的專屬水晶顧問。透過顧問式推薦，協助您在財運、感情、情緒與人際中校正能量方向，找回最佳狀態。提供台灣專業水晶推薦與配戴建議，立即預約諮詢。">
     <meta name="keywords" content="台中水晶店, 台灣水晶店, 附近水晶店, 騏藝逸品, Qi Yi Crystal, 水晶顧問, 能量校正, 水晶推薦, 財運水晶, 感情水晶, 療癒水晶, 專業水晶諮詢, 台中水晶門市推薦">
@@ -12,29 +12,38 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://qiyicrystal.com.tw/">
 
-    <!-- Favicon / 小 Logo (解決 Google 搜尋結果顯示地球圖示的問題) -->
-    <!-- Google 規範：Favicon 必須是 48x48 的倍數，且必須是正方形 -->
+    <!-- 2. Favicon / 小 Logo 強化 (針對 Google 搜尋結果優化) -->
+    <!-- 注意：Google 偏好 48x48 及其倍數的正方形圖片 -->
     <link rel="icon" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png">
     <link rel="apple-touch-icon" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png">
     <link rel="shortcut icon" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png">
 
-    <!-- Open Graph / Facebook / LINE 分享顯示資訊 -->
+    <!-- 3. 解決 Shopline 舊連結 404 問題的 JavaScript 補丁 -->
+    <!-- 如果使用者訪問的是舊的商品路徑 (例如 /products/xxx)，自動導向回首頁 -->
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            // 檢查是否為 Shopline 常見的舊路徑格式
+            if (path.indexOf('/products/') !== -1 || path.indexOf('/categories/') !== -1 || path.indexOf('/pages/') !== -1) {
+                // 為了 SEO 權重，最好的做法是在伺服器端做 301 轉址，但前端 JS 轉址也能減少客戶流失
+                window.location.replace('/');
+            }
+        })();
+    </script>
+
+    <!-- 4. 社群分享標籤 (OG/Twitter) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qiyicrystal.com.tw/">
     <meta property="og:title" content="台中水晶店推薦｜騏藝逸品 Qi Yi Crystal：專業水晶顧問服務">
     <meta property="og:description" content="搜尋台中水晶店？騏藝逸品協助您透過適合的水晶能量，找回對的人生方向。專業顧問式推薦，不只是買水晶，更是找回狀態。">
     <meta property="og:image" content="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png">
-
-    <!-- Twitter 分享顯示資訊 -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://qiyicrystal.com.tw/">
     <meta property="twitter:title" content="台中水晶店推薦｜騏藝逸品 Qi Yi Crystal：專業水晶顧問服務">
-    <meta property="twitter:description" content="搜尋台中水晶店？騏藝逸品協助您透過適合的水晶能量，找回對的人生方向。專業顧問式推薦。">
     <meta property="twitter:image" content="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png">
     
-    <!-- Google 結構化資料 (JSON-LD) - 強化在地搜尋與搜尋結果顯示 Logo -->
+    <!-- 5. 結構化資料 (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -66,15 +75,7 @@
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "11:00",
         "closes": "21:00"
       },
@@ -82,16 +83,6 @@
         "https://www.instagram.com/qiyicrystal/",
         "https://lin.ee/SrjhdP1"
       ]
-    }
-    </script>
-
-    <!-- 額外加入 Organization 標記，專門用來指定搜尋結果的 Logo -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://qiyicrystal.com.tw/",
-      "logo": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png"
     }
     </script>
 
@@ -111,356 +102,65 @@
             --transition: all 0.3s ease;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-main);
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, .serif {
-            font-family: 'Noto Serif TC', serif;
-            font-weight: 700;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 80px 0;
-        }
-
-        /* Navbar */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(5px);
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            padding: 10px 0;
-        }
-
-        .nav-container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .nav-logo {
-            height: 60px;
-            width: auto;
-        }
-
-        section {
-            padding: 20px 0;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 16px 32px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            text-align: center;
-            transition: var(--transition);
-            cursor: pointer;
-            border: none;
-            font-size: 16px;
-            letter-spacing: 1px;
-            width: 100%;
-            max-width: 300px;
-            margin-bottom: 12px;
-        }
-
-        .btn-primary {
-            background-color: var(--accent-color);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--primary-color);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--accent-color);
-            border: 1px solid var(--accent-color);
-        }
-
-        .btn-secondary:hover {
-            background-color: rgba(93, 84, 75, 0.05);
-            transform: translateY(-2px);
-        }
-
-        .tagline {
-            color: var(--primary-color);
-            font-weight: 500;
-            letter-spacing: 2px;
-            margin-bottom: 16px;
-            display: block;
-            font-size: 14px;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(rgba(249, 247, 245, 0.8), rgba(249, 247, 245, 0.8)), 
-                        url('https://images.unsplash.com/photo-1551269901-5c5e14c25df7?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
-            padding-top: 100px;
-        }
-
-        .hero-logo {
-            width: 120px;
-            height: auto;
-            margin-bottom: 20px;
-            border-radius: 50%;
-            background: white;
-            padding: 10px;
-            box-shadow: var(--shadow);
-        }
-
-        .hero h1 {
-            font-size: 32px;
-            margin-bottom: 24px;
-            color: var(--accent-color);
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: var(--text-muted);
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-brand {
-            margin-top: 40px;
-            font-size: 16px;
-            letter-spacing: 4px;
-            color: var(--primary-color);
-            opacity: 0.8;
-        }
-
-        .cta-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* Brand Section */
-        .brand-intro {
-            background-color: var(--white);
-            text-align: center;
-        }
-
-        .brand-intro h2 {
-            font-size: 28px;
-            margin-bottom: 30px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-
-        .brand-intro h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 40px;
-            height: 2px;
-            background-color: var(--primary-color);
-        }
-
-        .brand-content {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .brand-content p {
-            margin-bottom: 20px;
-            color: var(--text-muted);
-        }
-
-        /* Resonance Section */
-        .resonance {
-            background-color: var(--secondary-color);
-            color: var(--accent-color);
-            text-align: center;
-        }
-
-        .resonance h2 {
-            margin-bottom: 24px;
-        }
-
-        .resonance p {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 18px;
-        }
-
-        /* Services Section */
-        .services {
-            background-color: var(--bg-light);
-        }
-
-        .services h2 {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .service-list {
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        .service-item {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .service-item:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Trust Section */
-        .trust {
-            background-color: var(--accent-color);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .trust h2 {
-            margin-bottom: 30px;
-        }
-
-        .trust p {
-            max-width: 700px;
-            margin: 0 auto;
-            opacity: 0.9;
-        }
-
-        /* Case Section */
-        .cases h2 {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .case-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-
-        .case-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            text-align: center;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: var(--white);
-            text-align: center;
-        }
-
-        .contact h2 {
-            margin-bottom: 40px;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        /* Final CTA */
-        .final-cta {
-            background: linear-gradient(rgba(217, 197, 178, 0.9), rgba(217, 197, 178, 0.9)),
-                        url('https://images.unsplash.com/photo-1515405290399-1e4c7bb1142e?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
-            text-align: center;
-        }
-
-        .final-cta h2 {
-            margin-bottom: 20px;
-        }
-
-        .final-cta p {
-            margin-bottom: 40px;
-            color: var(--accent-color);
-        }
-
-        footer {
-            padding: 40px 0;
-            text-align: center;
-            font-size: 14px;
-            color: var(--text-muted);
-            border-top: 1px solid #eee;
-        }
-
-        /* Responsive */
-        @media (min-width: 768px) {
-            .hero h1 { font-size: 48px; }
-            .service-list { grid-template-columns: 1fr 1fr; }
-            .case-grid { grid-template-columns: 1fr 1fr 1fr; }
-            .cta-group { flex-direction: row; justify-content: center; }
-            .btn { width: auto; }
-        }
-
-        /* Animations */
-        [data-aos] {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease;
-        }
-
-        [data-aos].aos-animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: var(--bg-light); color: var(--text-main); line-height: 1.8; overflow-x: hidden; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif TC', serif; font-weight: 700; }
+        .container { width: 90%; max-width: 1000px; margin: 0 auto; padding: 80px 0; }
+        nav { position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 10px 0; }
+        .nav-container { width: 90%; max-width: 1000px; margin: 0 auto; display: flex; justify-content: center; align-items: center; }
+        .nav-logo { height: 60px; width: auto; }
+        section { padding: 20px 0; }
+        .btn { display: inline-block; padding: 16px 32px; border-radius: 4px; text-decoration: none; font-weight: 500; text-align: center; transition: var(--transition); cursor: pointer; border: none; font-size: 16px; letter-spacing: 1px; width: 100%; max-width: 300px; margin-bottom: 12px; }
+        .btn-primary { background-color: var(--accent-color); color: var(--white); }
+        .btn-primary:hover { background-color: var(--primary-color); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .btn-secondary { background-color: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); }
+        .btn-secondary:hover { background-color: rgba(93, 84, 75, 0.05); transform: translateY(-2px); }
+        .tagline { color: var(--primary-color); font-weight: 500; letter-spacing: 2px; margin-bottom: 16px; display: block; font-size: 14px; }
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(249, 247, 245, 0.8), rgba(249, 247, 245, 0.8)), url('https://images.unsplash.com/photo-1551269901-5c5e14c25df7?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat; padding-top: 100px; }
+        .hero-logo { width: 120px; height: auto; margin-bottom: 20px; border-radius: 50%; background: white; padding: 10px; box-shadow: var(--shadow); }
+        .hero h1 { font-size: 32px; margin-bottom: 24px; color: var(--accent-color); }
+        .hero p { font-size: 18px; color: var(--text-muted); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .hero-brand { margin-top: 40px; font-size: 16px; letter-spacing: 4px; color: var(--primary-color); opacity: 0.8; }
+        .cta-group { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+        .brand-intro { background-color: var(--white); text-align: center; }
+        .brand-intro h2 { font-size: 28px; margin-bottom: 30px; position: relative; padding-bottom: 15px; }
+        .brand-intro h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 40px; height: 2px; background-color: var(--primary-color); }
+        .brand-content { max-width: 700px; margin: 0 auto; text-align: left; }
+        .brand-content p { margin-bottom: 20px; color: var(--text-muted); }
+        .resonance { background-color: var(--secondary-color); color: var(--accent-color); text-align: center; }
+        .resonance h2 { margin-bottom: 24px; }
+        .resonance p { max-width: 700px; margin: 0 auto; font-size: 18px; }
+        .services { background-color: var(--bg-light); }
+        .services h2 { text-align: center; margin-bottom: 50px; }
+        .service-list { list-style: none; display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .service-item { background: var(--white); padding: 30px; border-radius: 8px; box-shadow: var(--shadow); transition: var(--transition); border-left: 4px solid var(--primary-color); }
+        .service-item:hover { transform: translateY(-5px); }
+        .trust { background-color: var(--accent-color); color: var(--white); text-align: center; }
+        .trust h2 { margin-bottom: 30px; }
+        .trust p { max-width: 700px; margin: 0 auto; opacity: 0.9; }
+        .cases h2 { text-align: center; margin-bottom: 50px; }
+        .case-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        .case-card { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: var(--shadow); text-align: center; }
+        .contact { background-color: var(--white); text-align: center; }
+        .contact h2 { margin-bottom: 40px; }
+        .contact-grid { display: grid; grid-template-columns: 1fr; gap: 15px; max-width: 400px; margin: 0 auto; }
+        .final-cta { background: linear-gradient(rgba(217, 197, 178, 0.9), rgba(217, 197, 178, 0.9)), url('https://images.unsplash.com/photo-1515405290399-1e4c7bb1142e?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat; text-align: center; }
+        .final-cta h2 { margin-bottom: 20px; }
+        .final-cta p { margin-bottom: 40px; color: var(--accent-color); }
+        footer { padding: 40px 0; text-align: center; font-size: 14px; color: var(--text-muted); border-top: 1px solid #eee; }
+        @media (min-width: 768px) { .hero h1 { font-size: 48px; } .service-list { grid-template-columns: 1fr 1fr; } .case-grid { grid-template-columns: 1fr 1fr 1fr; } .cta-group { flex-direction: row; justify-content: center; } .btn { width: auto; } }
+        [data-aos] { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
+        [data-aos].aos-animate { opacity: 1; transform: translateY(0); }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav>
         <div class="nav-container">
             <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png" alt="騏藝逸品 Logo" class="nav-logo">
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container" data-aos>
             <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/jWgfNaghMgiEeEOa.png" alt="騏藝逸品 Logo" class="hero-logo">
@@ -482,7 +182,6 @@
         </div>
     </section>
 
-    <!-- Brand Intro -->
     <section class="brand-intro">
         <div class="container" data-aos>
             <h2>關於騏藝逸品：台中專業水晶店首選</h2>
@@ -494,7 +193,6 @@
         </div>
     </section>
 
-    <!-- Resonance Section -->
     <section class="resonance">
         <div class="container" data-aos>
             <h2>搜尋附近水晶店？您可能不是不努力，而是狀態卡住了</h2>
@@ -505,7 +203,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="services">
         <div class="container" data-aos>
             <h2>騏藝逸品能幫您做什麼？專業水晶能量服務</h2>
@@ -519,7 +216,6 @@
         </div>
     </section>
 
-    <!-- Trust Section -->
     <section class="trust">
         <div class="container" data-aos>
             <h2>為什麼不是隨便找一間台灣水晶店買就好？</h2>
@@ -531,7 +227,6 @@
         </div>
     </section>
 
-    <!-- Case Section -->
     <section class="cases">
         <div class="container" data-aos>
             <h2>來過騏藝逸品的人，常常不是為了買，而是想找到答案</h2>
@@ -549,7 +244,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact">
         <div class="container" data-aos>
             <h2>立即聯絡騏藝逸品 - 台中水晶顧問</h2>
@@ -562,7 +256,6 @@
         </div>
     </section>
 
-    <!-- Final CTA -->
     <section class="final-cta">
         <div class="container" data-aos>
             <h2>現在就開始，校正能量回到對的狀態</h2>
@@ -582,23 +275,14 @@
     </footer>
 
     <script>
-        // Simple Scroll Reveal Animation
         document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                threshold: 0.1
-            };
-
+            const observerOptions = { threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('aos-animate');
-                    }
+                    if (entry.isIntersecting) { entry.target.classList.add('aos-animate'); }
                 });
             }, observerOptions);
-
-            document.querySelectorAll('[data-aos]').forEach(el => {
-                observer.observe(el);
-            });
+            document.querySelectorAll('[data-aos]').forEach(el => { observer.observe(el); });
         });
     </script>
 </body>
