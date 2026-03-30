@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>頁面已搬遷｜騏藝逸品 Qi Yi Crystal</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/ziiZGLJLOQwavYgD.webp" sizes="any">
+    <link rel="canonical" href="https://qiyicrystal.com/">
+    
+    <!-- 自動重導向回首頁（3秒後） -->
+    <meta http-equiv="refresh" content="3;url=https://qiyicrystal.com/">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #F9F7F5;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: white;
+            padding: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin: 0 auto 24px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #5D544B;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+            color: #4A4A4A;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+        .countdown {
+            font-size: 14px;
+            color: #8E7C68;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            background-color: #5D544B;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            gap: 8px;
+        }
+        .btn:hover {
+            background-color: #6B5C4B;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .brand {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #8E7C68;
+            letter-spacing: 3px;
+        }
+        #timer { font-weight: 700; }
+    </style>
+
+    <!-- 結構化資料：告訴 Google 這些舊頁面已不存在 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "頁面已搬遷",
+        "description": "此頁面已不存在，請前往騏藝逸品首頁。",
+        "url": "https://qiyicrystal.com/",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "騏藝逸品 Qi Yi Crystal",
+            "url": "https://qiyicrystal.com/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663412291274/ziiZGLJLOQwavYgD.webp" 
+             alt="騏藝逸品 Logo" class="logo" width="80" height="80">
+        
+        <h1>此頁面已搬遷</h1>
+        
+        <p>
+            感謝您的造訪！<br>
+            騏藝逸品已全面升級，此頁面內容已整合至新版官網。<br>
+            我們將自動為您導向首頁。
+        </p>
+        
+        <p class="countdown">
+            <span id="timer">3</span> 秒後自動跳轉...
+        </p>
+        
+        <a href="https://qiyicrystal.com/" class="btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            立即前往騏藝逸品首頁
+        </a>
+        
+        <div class="brand">騏藝逸品 Qi Yi Crystal</div>
+    </div>
+
+    <script>
+        // 倒數計時
+        var seconds = 3;
+        var timer = document.getElementById('timer');
+        var countdown = setInterval(function() {
+            seconds--;
+            if (timer) timer.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                window.location.replace('https://qiyicrystal.com/');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
