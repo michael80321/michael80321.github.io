@@ -1,0 +1,19 @@
+{
+  "name": "騏藝逸品 Qi Yi Crystal",
+  "short_name": "騏藝逸品",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6B5C4B",
+  "background_color": "#F9F7F5",
+  "display": "standalone"
+}
